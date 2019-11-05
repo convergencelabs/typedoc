@@ -39,7 +39,7 @@
     "minimatch": "^3.0.0",
     "progress": "^2.0.3",
     "shelljs": "^0.8.3",
-    "typedoc-default-themes": "file:../typedoc-default-themes",
+    "typedoc-default-themes": "lddubeau/typedoc-default-themes#feature/export-declarations",
     "typescript": "3.6.x"
   },
   "devDependencies": {
