@@ -40,6 +40,34 @@
             ],
             "preLaunchTask": "build",
             "sourceMaps": true
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug Examples",
+            "program": "${workspaceRoot}/bin/typedoc",
+            "cwd": "${workspaceRoot}/examples/basic",
+            "args": [
+                "--module",
+                "commonjs",
+                "--includes",
+                "inc/",
+                "--media",
+                "media/",
+                "--target",
+                "ES5",
+                "--json",
+                "json.json",
+                "--out",
+                "doc/",
+                "src/"
+            ],
+            "outFiles": [
+                "${workspaceRoot}/lib/**/*.js",
+                "${workspaceRoot}/test/**/*.js"
+            ],
+            "preLaunchTask": "build",
+            "sourceMaps": true
         }
     ]
 }
